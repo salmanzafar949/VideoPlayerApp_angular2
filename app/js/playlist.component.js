@@ -21,11 +21,14 @@ System.register(["angular2/core"], function(exports_1, context_1) {
             PlaylistComponent = (function () {
                 function PlaylistComponent() {
                 }
+                PlaylistComponent.prototype.onSelect = function (vid) {
+                    console.log(JSON.stringify(vid));
+                };
                 PlaylistComponent = __decorate([
                     core_1.Component({
                         selector: 'playlist',
                         templateUrl: 'app/ts/templates/playlist.component.html',
-                        inputs: ['Videos']
+                        inputs: ['videos']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], PlaylistComponent);

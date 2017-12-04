@@ -5,7 +5,13 @@ import {Videos} from "./videos";
 
     selector:'playlist',
     templateUrl:'app/ts/templates/playlist.component.html',
-    inputs:['Videos']
+    inputs:['videos']
 })
 
-export class PlaylistComponent{}
+export class PlaylistComponent{
+
+    onSelect(vid:Videos)
+    {
+        console.log(JSON.stringify(vid));
+    }
+}
