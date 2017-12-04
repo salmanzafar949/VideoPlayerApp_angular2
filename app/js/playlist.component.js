@@ -25,6 +25,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'playlist',
                         templateUrl: 'app/ts/templates/playlist.component.html',
+                        inputs: ['Videos']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], PlaylistComponent);

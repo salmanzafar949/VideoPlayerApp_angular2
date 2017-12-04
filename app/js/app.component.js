@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./headings.config", "./playlist.component"], function(exports_1, context_1) {
+System.register(['angular2/core', "./headings.config", "./playlist.component", "./videos"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', "./headings.config", "./playlist.component"], 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, headings_config_1, playlist_component_1;
+    var core_1, headings_config_1, playlist_component_1, videos_1;
     var AppComponent;
     return {
         setters:[
@@ -22,11 +22,18 @@ System.register(['angular2/core', "./headings.config", "./playlist.component"], 
             },
             function (playlist_component_1_1) {
                 playlist_component_1 = playlist_component_1_1;
+            },
+            function (videos_1_1) {
+                videos_1 = videos_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
                     this.mainheading = headings_config_1.HeadingsConfig.Main_heading;
+                    this.videos = [
+                        new videos_1.Videos(1, "Test Video 1", "128khgf", "Video 1"),
+                        new videos_1.Videos(2, "Test Video 2", "abcfghi", "Video 2")
+                    ];
                 }
                 AppComponent = __decorate([
                     core_1.Component({

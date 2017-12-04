@@ -5,6 +5,7 @@ import {Videos} from "./videos";
 
     selector:'playlist',
     templateUrl:'app/ts/templates/playlist.component.html',
+    inputs:['Videos']
 })
 
 export class PlaylistComponent{}
